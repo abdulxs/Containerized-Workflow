@@ -30,6 +30,9 @@ setting up Temporal cloud
 
 PART 2
 
+install Go
+`sudo yum install golang-go`
+
 Package Temporal App as a Docker image
 
 1. clone the app repo `git clone https://github.com/abdulxs/hello-workflow.git`
