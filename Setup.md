@@ -5,7 +5,7 @@ https://docs.temporal.io/diagrams/basic-platform-topology-cloud.svg
 PART 1
 setting up Temporal cloud
 
-1. Requested a Temporal cloud account from [Request form](https://pages.temporal.io/cloud-request-access)
+1. //Requested a Temporal cloud account from [Request form](https://pages.temporal.io/cloud-request-access)
 2. switched to self hosted temporal cluster guide
 3. run temporal cluster in docker container
 4. Launch ec2 instance for Temporal server on an amazon linux image
@@ -30,10 +30,18 @@ setting up Temporal cloud
 
 PART 2
 
-install Go
-`sudo yum install golang-go`
-
 Package Temporal App as a Docker image
 
 1. clone the app repo `git clone https://github.com/abdulxs/hello-workflow.git`
-2. create dockerfile 
+2. create dockerfile. See `dockerfile`
+
+Write a CI/CD for the app
+See `.github/workflows/main.yml`
+set repo secrets
+
+As part of the workflow, I deployed the docker image to the docker-hub. 
+
+Deploy app to Kubernetes
+1. Set up cluster
+2. create manifest
+3. deploy application
