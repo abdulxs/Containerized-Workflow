@@ -8,9 +8,9 @@ COPY ./starter/main.go .
 RUN go mod download
 
 COPY . .
-RUN go build -o bin .
+RUN go build -o /app/bin .
 
-FROM scratch
+FROM ubuntu:latest
 
 COPY --from=builder /app/bin /app/bin
 
