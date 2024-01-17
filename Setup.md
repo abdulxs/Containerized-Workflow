@@ -38,10 +38,12 @@ Package Temporal App as a Docker image
 Write a CI/CD for the app
 See `.github/workflows/main.yml`
 set repo secrets
+![ci/cd](https://github.com/abdulxs/hello-workflow/assets/18741380/80d1f8b7-353e-40d6-b2de-787fdd025165)
 
 As part of the workflow, I deployed the docker image to the docker-hub. 
 
-Deploy app to Kubernetes
-1. Set up cluster
-2. create manifest
-3. deploy application
+Provision EKS cluster with Terraform see `./terraform/`
+
+create manifest, see `starter.yaml`
+
+deploy application to EKS cluster
