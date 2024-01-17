@@ -1,16 +1,12 @@
 ### Test workflow
 
+Wafi uses the microservice software architecture. The microservices approach to software development helps teams deploy faster, but it comes with some issues, one of them is data consistency. How can data change in microservice A be propagated to microservice B and C? Send it via an event?
 
-
-Hi, If you are viewing this, it is because you scaled through to the next round of the recruitment for the  DevOps position at Wafi. Congratulations 🎉✨.
-
-At Wafi, we use the microservice software architecture. The microservices approach to software development helps teams deploy faster, but it comes with some issues, one of them is data consistency. How can data change in microservice A be propagated to microservice B and C? Send it via an event?
-
-Yes, that works but what if B updates itself and C had an hiccups and just could not make the update 🙄.
+Yes, that works but what if B updates itself and C had hiccups and just could not make the update? 🙄
 
 Then that means we need to have a mechanism that allows us to handle such failures, make retries and what-else? Just how many of the situations like above do we have to write failures and retry logic for? 
 
-At Wafi, we use [Temporal](https://temporal.io) as a microservice orchestrator which helps solve the issues stated above for us.
+Wafi uses [Temporal](https://temporal.io) as a microservice orchestrator which helps solve the issues stated above
 
 ## Your task
 
