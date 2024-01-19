@@ -44,6 +44,8 @@ As part of the workflow, I deployed the docker image to the docker-hub.
 
 Provision EKS cluster with Terraform see `./terraform/`
 
+![EKS Cluster on AWS console](https://github.com/abdulxs/Containerized-Workflow/assets/18741380/d6aea814-d57b-4e6a-b6ae-6ae363efb035)
+
 create manifest, see `starter.yaml`
 
 deploy application to EKS cluster
